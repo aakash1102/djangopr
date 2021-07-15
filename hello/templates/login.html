@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}login{% endblock %}
+{% block css %}
+ <link href="/static/bootstrapNev/css/signin.css" rel="stylesheet">
+{% endblock css %}
+{% block style %}
+.container1 {
+  margin-top:   50px;
+}
+  
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+  /* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .container1 {
+     width: 100%;
+  }
+}
+{% endblock  %}
+
+{% block content %}
+
+{% load static %}
+
+
+
+    
+<form class="form-signin">
+  <div class="container1">
+  <!--<img class="mb-4" src="/static/bootstrapNev/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  <label for="inputEmail" class="sr-only">username</label>
+  <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2019-2021</p>
+  </div>
+</form>
+
+ {% endblock  %}
+    
+<!--  </body>
+</html>-->
