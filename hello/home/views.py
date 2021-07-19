@@ -8,6 +8,9 @@ def home(request):
 def register(request):
     return render(request,'/templates/register.html')
 
+def about(request):
+     return redirect('login.html')
+
 
 '''def services(request):
     return HttpResponse("this is service page''''''  !!")
